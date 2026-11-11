@@ -17,3 +17,7 @@
 /* Shared accessibility fixes */
 @media(max-width:900px){.nav-actions .menu-btn{display:grid!important}}
 :focus-visible{outline:2px solid var(--sage-deep);outline-offset:4px}.drawer:not(.open){visibility:hidden}.drawer.open{visibility:visible}.rail-controls button:disabled{opacity:.35;cursor:default}
+
+/* Preserve the complete cover wherever a product thumbnail is square. */
+.product img[src*="book-cover"],.modal-grid img[src*="book-cover"],.cart-item img[src*="book-cover"]{object-fit:contain;background:var(--ivory)}
+.brand img{object-fit:contain;object-position:center}
