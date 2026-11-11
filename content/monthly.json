@@ -1,0 +1,89 @@
+{
+  "edition": "From the studio",
+  "featured": [
+    {
+      "eyebrow": "Our latest project",
+      "title": "An island, reimagined",
+      "image": "assets/editorial/island.jpg",
+      "alt": "Board and batten added to an existing kitchen island",
+      "href": "project-island.html"
+    },
+    {
+      "eyebrow": "Featured pottery",
+      "title": "Mugs with a warm glow",
+      "image": "assets/editorial/mug-candles.jpg",
+      "alt": "Handmade ceramic mugs filled with candles",
+      "href": "shop.html#mug-candles"
+    },
+    {
+      "eyebrow": "Wooden pieces",
+      "title": "Made for your space",
+      "image": "assets/showroom-board.svg",
+      "alt": "Illustrative wooden serving board",
+      "href": "custom.html#carpentry"
+    },
+    {
+      "eyebrow": "Out & about",
+      "title": "Find us at a market",
+      "image": "assets/editorial/events.jpg",
+      "alt": "Almost Home and RISE upcoming vendor event flyer",
+      "href": "events.html"
+    },
+    {
+      "eyebrow": "Made just for you",
+      "title": "Your idea. Our hands.",
+      "image": "assets/products/berry-bowl.png",
+      "alt": "AI-enhanced ceramic fruit strainer preview",
+      "href": "custom.html"
+    },
+    {
+      "eyebrow": "Books & a new chapter",
+      "title": "Stories from Almost Home",
+      "image": "assets/book-cover.jpg",
+      "alt": "The Summer Switch Up book",
+      "href": "books.html"
+    }
+  ],
+  "project": {
+    "title": "A little detail. A whole new feel.",
+    "description": "Board and batten added to an existing kitchen island brings definition and character to the heart of the home.",
+    "details": [
+      "Project: board and batten on an existing island.",
+      "A fresh white finish keeps the new detail in step with the surrounding kitchen.",
+      "Interested in a similar update? Share a photo of your space and tell us what you have in mind."
+    ],
+    "images": [
+      {
+        "src": "assets/editorial/island.jpg",
+        "alt": "Completed board-and-batten detailing across an existing kitchen island"
+      }
+    ]
+  },
+  "events": [
+    {
+      "dates": "November 28–29",
+      "name": "Leesport Christmas Show",
+      "address": "1312 Gernants Church Rd, Leesport"
+    },
+    {
+      "dates": "December 4–6",
+      "name": "Liederkranz Christkindlmarkt",
+      "address": "143 Spook Ln, Reading"
+    },
+    {
+      "dates": "December 4–6",
+      "name": "Hay Creek Christmas Fest",
+      "address": "1250 Furnace Rd, Geigertown"
+    },
+    {
+      "dates": "December 12",
+      "name": "Gov Mifflin Winter Craft Show",
+      "address": "101 S Waverly St, Shillington"
+    }
+  ],
+  "newsletter": {
+    "title": "A little note from Almost Home.",
+    "text": "New pieces, recent projects and where to find us next. Our mailing list is coming soon.",
+    "signupUrl": ""
+  }
+}
