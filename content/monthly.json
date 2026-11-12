@@ -9,11 +9,11 @@
       "href": "project-island.html"
     },
     {
-      "eyebrow": "Featured pottery",
-      "title": "Mugs with a warm glow",
-      "image": "assets/editorial/mug-candles.jpg",
-      "alt": "Handmade ceramic mugs filled with candles",
-      "href": "shop.html#mug-candles"
+      "eyebrow": "Pottery spotlight",
+      "title": "Explore all pottery",
+      "image": "assets/products/mugs.png",
+      "alt": "Blue-green handmade mugs, AI-enhanced product preview",
+      "href": "shop.html?category=pottery"
     },
     {
       "eyebrow": "Wooden pieces",
@@ -30,14 +30,14 @@
       "href": "events.html"
     },
     {
-      "eyebrow": "Made just for you",
+      "eyebrow": "Custom pieces",
       "title": "Your idea. Our hands.",
-      "image": "assets/products/berry-bowl.png",
-      "alt": "AI-enhanced ceramic fruit strainer preview",
+      "image": "assets/showroom-materials.svg",
+      "alt": "Illustrative materials for custom pottery and carpentry",
       "href": "custom.html"
     },
     {
-      "eyebrow": "Books & a new chapter",
+      "eyebrow": "Books & stories",
       "title": "Stories from Almost Home",
       "image": "assets/book-cover.jpg",
       "alt": "The Summer Switch Up book",
