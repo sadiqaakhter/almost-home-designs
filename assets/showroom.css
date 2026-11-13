@@ -9,3 +9,54 @@
 
 .object{position:relative}.object:before{content:'';position:absolute;top:-3px;left:50%;width:1px;height:10%;background:#7e806d;z-index:2}.item-bowl .object:before{height:31%;top:-8px}.item-mug .object:before{height:26%}.item-board .object:before{height:8%}.item-book .object:before{height:8%}.item-vase .object:before{height:12%}.item-materials .object:before{height:16%}@media(min-width:901px) and (max-height:780px){.object{height:clamp(145px,16vw,205px)}.showroom-bottom{padding-top:32px}.showroom h1{font-size:clamp(42px,5vw,72px)}.rail-viewport{margin-top:18px}.showroom{padding-top:18px}}
 .object{display:flex;align-items:center;justify-content:center}.object img{min-width:0;min-height:0;max-height:100%}
+
+
+/* 2026-11-13 — video-reference hero pass */
+body[data-page=home]{background:#f5f3ee}
+body[data-page=home] .site-header{background:#f5f3ee;border-bottom:0}
+body[data-page=home] .nav{min-height:58px;width:calc(100% - 48px);max-width:none}
+body[data-page=home] .brand{min-width:92px}
+body[data-page=home] .brand img{width:78px;height:42px}
+body[data-page=home] .nav-links{gap:24px}
+body[data-page=home] .nav-links a{font-size:10px;letter-spacing:.01em;font-weight:500;color:#343832}
+body[data-page=home] .nav-actions .icon-btn{width:32px;height:32px;font-size:13px}
+body[data-page=home] .showroom{min-height:calc(100svh - 58px);padding-top:8px;background:#f5f3ee}
+body[data-page=home] .showroom-kicker{margin-inline:28px;font-size:8px;letter-spacing:.11em;color:#71766f}
+body[data-page=home] .rail-viewport{margin-top:8px;padding-inline:24px}
+body[data-page=home] .rail-track{gap:8px;padding-top:0}
+body[data-page=home] .rail-track:before{top:2px;height:2px;left:-40px;right:-40px;background:#6d6a60;box-shadow:none;transform:none}
+body[data-page=home] .hanging-item{width:clamp(145px,17.5vw,265px)}
+body[data-page=home] .suspension{height:26px;background:#77756c}
+body[data-page=home] .suspension:before{width:7px;height:10px;left:-3px;border-radius:1px;box-shadow:none}
+body[data-page=home] .suspension:after{display:none}
+body[data-page=home] .object{height:clamp(150px,18vw,250px)}
+body[data-page=home] .object img{transform:scale(1.02);filter:drop-shadow(4px 10px 7px rgba(47,45,38,.18))}
+body[data-page=home] .object-label{padding:7px 0 8px;width:88%;font-size:8px;border-bottom:0;color:#535852}
+body[data-page=home] .rail-meta{margin:2px 28px 0;font-size:8px;color:#777b74}
+body[data-page=home] .rail-controls button{width:28px;height:28px;border-color:#c4c5bd;font-size:11px}
+body[data-page=home] .rail-controls #motionToggle{font-size:8px}
+body[data-page=home] .showroom-bottom{margin-inline:28px;grid-template-columns:minmax(0,1.55fr) minmax(260px,.7fr);gap:36px;padding:16px 0 26px;align-items:end}
+body[data-page=home] .showroom .eyebrow{display:none}
+body[data-page=home] .showroom h1{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:clamp(34px,4.55vw,70px);font-weight:650;line-height:.96;letter-spacing:-.065em;max-width:780px;color:#2f332f}
+body[data-page=home] .showroom h1 em{font-style:normal;font-weight:650;color:#2f332f}
+body[data-page=home] .showroom-intro{max-width:330px;padding-bottom:2px}
+body[data-page=home] .showroom-intro p{font-size:10px;line-height:1.55;margin:0 0 12px;color:#686d67}
+body[data-page=home] .text-actions{gap:9px}
+body[data-page=home] .showroom .line-link{min-height:30px;border:1px solid #aaa99f;border-radius:999px;padding:0 13px;font-size:9px;gap:10px}
+body[data-page=home] .showroom .line-link:first-child{background:#6f5048;color:#fff;border-color:#6f5048}
+body[data-page=home] .showroom .line-link:hover{background:#2f332f;color:#fff;border-color:#2f332f}
+@media(max-width:900px){
+ body[data-page=home] .nav{min-height:64px}
+ body[data-page=home] .showroom{min-height:auto}
+ body[data-page=home] .showroom-bottom{grid-template-columns:1fr;padding-top:24px}
+ body[data-page=home] .showroom h1{font-size:clamp(36px,8vw,58px)}
+ body[data-page=home] .showroom-intro{max-width:420px}
+}
+@media(max-width:600px){
+ body[data-page=home] .showroom-kicker,body[data-page=home] .rail-meta,body[data-page=home] .showroom-bottom{margin-inline:16px}
+ body[data-page=home] .rail-viewport{padding-inline:16px;margin-top:5px}
+ body[data-page=home] .hanging-item{width:148px}
+ body[data-page=home] .object{height:155px}
+ body[data-page=home] .showroom-bottom{padding-top:18px}
+ body[data-page=home] .showroom h1{font-size:38px;line-height:.98}
+}
