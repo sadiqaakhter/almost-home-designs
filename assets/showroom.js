@@ -7,7 +7,24 @@ function controls(){document.querySelector('#railPrev').disabled=viewport.scroll
 function move(dir){viewport.scrollBy({left:dir*viewport.clientWidth*.7,behavior:reduced.matches?'instant':'smooth'});}
 document.querySelector('#railPrev').addEventListener('click',()=>move(-1));document.querySelector('#railNext').addEventListener('click',()=>move(1));viewport.addEventListener('scroll',controls,{passive:true});window.addEventListener('resize',controls);controls();
 viewport.addEventListener('keydown',e=>{if(e.target!==viewport)return;if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();move(e.key==='ArrowRight'?1:-1);}});
-function paint(t){raf=0;if(paused||!inside||document.hidden||!fine.matches||reduced.matches)return;if(!start)start=t;if(t-last>32){track.style.setProperty('--drift',`${Math.sin((t-start)/5500)*9}px`);last=t;}raf=requestAnimationFrame(paint);}
+function paint(t){
+  raf=0;
+  if(paused||!inside||document.hidden||reduced.matches)return;
+  if(!start)start=t;
+  if(t-last>16){
+    const elapsed=t-start;
+    track.style.setProperty('--drift',`${Math.sin(elapsed/4200)*18}px`);
+    document.querySelectorAll('.hanging-item').forEach((item,i)=>{
+      const phase=i*0.7;
+      const sway=Math.sin(elapsed/1700+phase)*2.8;
+      const lift=Math.sin(elapsed/2300+phase)*5;
+      item.style.setProperty('--tilt',`${sway}deg`);
+      item.style.setProperty('--lift',`${lift}px`);
+    });
+    last=t;
+  }
+  raf=requestAnimationFrame(paint);
+}
 function sync(){document.documentElement.dataset.motion=paused||reduced.matches?'paused':'running';document.dispatchEvent(new Event('motionchange'));toggle.textContent=paused?'Resume motion':'Pause motion';toggle.setAttribute('aria-pressed',String(paused));if(paused||reduced.matches){cancelAnimationFrame(raf);raf=0;track.style.setProperty('--drift','0px');}else if(!raf&&inside)raf=requestAnimationFrame(paint);}
 toggle.addEventListener('click',()=>{paused=!paused;sync()});reduced.addEventListener('change',()=>{paused=reduced.matches;sync()});
 new IntersectionObserver(([entry])=>{inside=entry.isIntersecting;if(inside)sync();else{cancelAnimationFrame(raf);raf=0;}},{threshold:.1}).observe(viewport);
