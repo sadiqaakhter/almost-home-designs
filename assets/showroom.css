@@ -105,3 +105,26 @@ body[data-page=home] .hanging-item:focus-visible .object-label{
 @media(max-width:600px){
   body[data-page=home] .object-label{font-size:8px;padding:7px 10px;min-width:78%}
 }
+
+/* continuous sliding hero rail */
+body[data-page=home] .rail-viewport{overflow:hidden}
+body[data-page=home] .rail-track{
+  display:flex;
+  width:max-content;
+  min-width:max-content;
+  gap:8px;
+  will-change:transform;
+  transform:translate3d(0,0,0);
+}
+body[data-page=home] .hanging-item{
+  transform:none!important;
+  transition:none!important;
+}
+body[data-page=home] .object{
+  transform:none!important;
+  transition:none!important;
+}
+body[data-page=home] .object-label{
+  transform:none!important;
+  transition:background .2s ease,color .2s ease,border-color .2s ease;
+}
