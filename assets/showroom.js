@@ -13,13 +13,17 @@ function paint(t){
   if(!start)start=t;
   if(t-last>16){
     const elapsed=t-start;
-    track.style.setProperty('--drift',`${Math.sin(elapsed/4200)*18}px`);
+    track.style.setProperty('--drift',`${Math.sin(elapsed/3000)*30}px`);
     document.querySelectorAll('.hanging-item').forEach((item,i)=>{
       const phase=i*0.7;
-      const sway=Math.sin(elapsed/1700+phase)*2.8;
-      const lift=Math.sin(elapsed/2300+phase)*5;
+      const sway=Math.sin(elapsed/1300+phase)*4.2;
+      const lift=Math.sin(elapsed/1750+phase)*8;
+      const bob=Math.sin(elapsed/2100+phase*1.4)*6;
+      const labelLift=Math.sin(elapsed/1750+phase)*4;
       item.style.setProperty('--tilt',`${sway}deg`);
       item.style.setProperty('--lift',`${lift}px`);
+      item.style.setProperty('--item-bob',`${bob}px`);
+      item.style.setProperty('--label-lift',`${labelLift}px`);
     });
     last=t;
   }
