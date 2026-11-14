@@ -9,7 +9,7 @@ let paused=reduced.matches;
 let raf=0;
 let last=0;
 let x=0;
-let speed=0.045;
+const speed=0.075;
 
 const original=[...track.children].map(n=>n.cloneNode(true));
 original.forEach(n=>track.appendChild(n.cloneNode(true)));
@@ -53,8 +53,6 @@ toggle?.addEventListener('click',()=>{paused=!paused;sync()});
 reduced.addEventListener('change',()=>{paused=reduced.matches;sync()});
 document.addEventListener('visibilitychange',sync);
 
-viewport.addEventListener('mouseenter',()=>{speed=0.02});
-viewport.addEventListener('mouseleave',()=>{speed=0.045});
 
 document.querySelector('#railPrev')?.addEventListener('click',()=>{x+=180;track.style.transform=`translate3d(${x}px,0,0)`});
 document.querySelector('#railNext')?.addEventListener('click',()=>{x-=180;track.style.transform=`translate3d(${x}px,0,0)`});
