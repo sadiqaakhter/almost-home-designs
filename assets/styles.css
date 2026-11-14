@@ -21,3 +21,26 @@
 /* Preserve the complete cover wherever a product thumbnail is square. */
 .product img[src*="book-cover"],.modal-grid img[src*="book-cover"],.cart-item img[src*="book-cover"]{object-fit:contain;background:var(--ivory)}
 .brand img{object-fit:contain;object-position:center}
+
+/* Design Journal */
+.journal-hero{padding:90px 0 56px;border-bottom:1px solid var(--line)}
+.journal-hero .lede{max-width:680px;font-size:1.05rem;margin-top:20px}
+.journal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.journal-card{display:flex;flex-direction:column;min-height:360px;padding:28px;border:1px solid var(--line);border-radius:24px;background:#fffaf4;transition:transform .2s ease,border-color .2s ease}
+.journal-card:hover{transform:translateY(-4px);border-color:var(--sage-deep)}
+.journal-card .tag{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sage-deep);font-weight:800}
+.journal-card h2{font-size:2rem;margin:18px 0 14px}
+.journal-card p{font-size:.95rem}
+.journal-card .line-link{margin-top:auto;align-self:flex-start}
+.article{max-width:820px;margin:0 auto;padding:78px 18px 100px}
+.article .article-meta{font-size:.8rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:22px}
+.article h1{font-size:clamp(2.8rem,6vw,5.5rem);margin-bottom:24px}
+.article h2{font-size:2.2rem;margin:48px 0 16px}
+.article p,.article li{font-size:1.05rem;line-height:1.85}
+.article ul{padding-left:1.2rem}
+.article .article-cta{margin-top:55px;padding:28px;border-radius:22px;background:linear-gradient(145deg,#e1eadc,#f5e6d7)}
+.journal-teaser{padding:85px 40px;max-width:1680px;margin:auto}
+.journal-teaser-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:34px}
+.journal-teaser-head p{max-width:460px}
+@media(max-width:900px){.journal-grid{grid-template-columns:1fr 1fr}.journal-teaser{padding:65px 25px}}
+@media(max-width:620px){.journal-grid{grid-template-columns:1fr}.journal-hero{padding-top:60px}.journal-teaser{padding:55px 20px}.journal-teaser-head{align-items:start;flex-direction:column}}
