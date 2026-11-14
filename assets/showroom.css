@@ -128,3 +128,36 @@ body[data-page=home] .object-label{
   transform:none!important;
   transition:background .2s ease,color .2s ease,border-color .2s ease;
 }
+
+/* final reference-motion cleanup */
+body[data-page=home] .rail-track{
+  gap:12px;
+  transition:none!important;
+}
+body[data-page=home] .hanging-item,
+body[data-page=home] .object,
+body[data-page=home] .object-label{
+  animation:none!important;
+}
+body[data-page=home] .hanging-item{
+  transform:none!important;
+  transition:none!important;
+}
+body[data-page=home] .object{
+  transform:none!important;
+  transition:none!important;
+}
+body[data-page=home] .object-label{
+  transform:none!important;
+  min-width:76%;
+  padding:9px 13px 8px;
+  font-size:10px;
+  font-weight:800;
+  background:rgba(247,244,237,.96);
+  border-color:rgba(47,51,47,.25);
+}
+body[data-page=home] .object-label>span:first-child{
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
