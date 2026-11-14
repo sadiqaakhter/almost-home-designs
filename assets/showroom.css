@@ -60,3 +60,8 @@ body[data-page=home] .showroom .line-link:hover{background:#2f332f;color:#fff;bo
  body[data-page=home] .showroom-bottom{padding-top:18px}
  body[data-page=home] .showroom h1{font-size:38px;line-height:.98}
 }
+
+/* continuous hero motion tuning */
+body[data-page=home] .hanging-item{transition:transform .18s linear}
+body[data-page=home] .object{transition:transform .18s linear}
+body[data-page=home] .rail-track{transition:none}
